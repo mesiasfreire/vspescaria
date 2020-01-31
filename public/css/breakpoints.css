@@ -1,0 +1,176 @@
+@media (min-width: 768px) {
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 20px 30px;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+    .speakers .bio .skills {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+
+    p {
+        font-size: 1em;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    .main-container .content {
+        padding: 30px 16px;
+    }
+
+    .main-home {
+        width: 100%;
+        height: auto;
+        padding: 0 16px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-home .titulo {
+        width: 100%;
+        text-align: center;
+        margin: 100px 0 0 0;
+    }
+
+    .main-home .titulo h1 {
+        font-size: 2.7em;
+        text-transform: uppercase;
+    }
+
+    .main-home .titulo .tagline {
+        margin-bottom: 40px;
+    }
+
+    .main-home .data {
+        width: 100%;
+        padding: 0;
+    }
+
+    .flex .flex-2 {
+        flex-basis: 100%;
+        margin: 0;
+    }
+
+    .schedule-title {
+        margin-bottom: 20px;
+    }
+
+    .about h1,
+    .schedule-title h1,
+    .speaker-title h1,
+    .location h1 {
+        font-size: 2.2em;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .schedule h3 {
+        font-size: 1em;
+    }
+
+    .schedule .div-50 {
+        margin-bottom: 30px;
+    }
+
+    .about p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        font-size: .75em;
+    }
+
+    .speakers {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .speakers .avatar {
+        width: 100%;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .speakers .avatar img {
+        margin-right: 0;
+        width: 200px;
+        height: 200px;
+    }
+
+    .speakers .bio {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+
+
+    .speakers .bio .skills li:last-child {
+        margin-right: 0;
+    }
+
+    .speakers .bio h1 {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    .speakers .bio h2 {
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+
+    .speakers .bio .div-50 {
+        display: none;
+    }
+
+    .speakers .bio p {
+        font-size: .875em;
+        font-weight: 500;
+    }
+
+    .main-location h3 {
+        font-size: 1em;
+    }
+
+    .main-location .infos li {
+        font-size: .95em;
+    }
+
+    .main-location .icon span {
+        font-size: .95em;
+    }
+
+    .main-location .mb-60 {
+        margin-bottom: 20px;
+    }
+
+    .email_contato {
+        font-size: 1em;
+    }
+}
