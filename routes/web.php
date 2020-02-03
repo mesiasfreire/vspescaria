@@ -35,6 +35,9 @@ Route::middleware('auth')->namespace('Admin')->prefix('admin')->group(function (
 
 Route::name('site.')->group(function () {
         Route::get('/','SiteController@index')->name('index');
+        Route::post('/email','SiteController@sendEmail')->name('email');
         Route::get('{category}/', 'SiteController@page')->name('page');
         Route::get('{category}/{post}', 'SiteController@content')->name('content');
 });
+
+

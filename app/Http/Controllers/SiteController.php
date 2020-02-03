@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Categories;
 use App\Models\Posts;
+use Illuminate\Support\Facades\Validator;
 use function foo\func;
 use Illuminate\Http\Request;
 
@@ -49,6 +50,24 @@ class SiteController extends Controller
             return abort(404);
         }
         return view('site.layout.content',compact('catPosts'));
+    }
+    public function sendEmail(Request $request) {
+
+        $validator = Validator::make($request->all(), [
+            'nome' => 'required|max:255',
+            'email'=>  'required|email',
+            'assunto'=> 'required',
+        ]);
+        if ($validator->fails()) {
+            return redirect('/#contact')
+                ->withErrors($validator)
+                ->withInput();
+        }
+        $contato = [
+            'nome'=>    $request->nome,
+            'email'=>   $request->email,
+            'assunto'=> $request->assunto,
+        ];
     }
 
 }
