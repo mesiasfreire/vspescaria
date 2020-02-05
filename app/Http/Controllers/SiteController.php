@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContatoMail;
 use App\Models\Categories;
 use App\Models\Posts;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 use function foo\func;
 use Illuminate\Http\Request;
@@ -68,6 +70,8 @@ class SiteController extends Controller
             'email'=>   $request->email,
             'assunto'=> $request->assunto,
         ];
+
+        Mail::send(new ContatoMail($contato));
     }
 
 }

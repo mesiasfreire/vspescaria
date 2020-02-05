@@ -11,24 +11,27 @@ class ContatoMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    private $contatos;
+    private $contato;
+
     /**
      * Create a new message instance.
      *
-     * @return void
+     * @param array $contato
      */
-    public function __construct($contatos)
+    public function __construct(array $contato)
     {
-        $this->contatos = $contatos;
+        $this->contato = $contato;
     }
-
     /**
      * Build the message.
      *
      * @return $this
      */
+
     public function build()
     {
-        return $this->view('view.emails.contato');
+        $this->subject('Contato site');
+        $this->to('contato@vspescaesportiva.com','Visctor Pescaria');
+        return $this->view('emails.contato',compact('contato'));
     }
 }

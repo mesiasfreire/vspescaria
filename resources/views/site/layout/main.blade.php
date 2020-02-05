@@ -192,7 +192,7 @@
         <div class="flex">
             <article class="flex-2 mb-30">
                 <p class="p_contato">Através do e-mail</p>
-                <p class="email_contato">vspescaesportiva@gmail.com</p>
+                <p class="email_contato">contato@vspescaesportiva.com</p>
                 <p class="p_contato">Por telefone</p>
                 <p class="email_contato">(92) 993474914/(92) 992167750</p>
                 <p class="p_contato">Siga-nos no Facebook</p>
