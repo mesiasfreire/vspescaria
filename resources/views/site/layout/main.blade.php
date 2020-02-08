@@ -37,17 +37,17 @@
 
 <!-- Back to top button -->
 <a class="back-top" id="button">
-    <img src="{{asset('images/_cdn/up-arrow.png')}}" alt="voltar para o topo">
+    <img src="{{asset('_cdn/up-arrow.png')}}" alt="voltar para o topo">
 </a>
 
 <div class="main-container-header" id="home">
-    <video id="videoBG" poster="{{asset('images/_cdn/poster.jpg')}}" autoplay muted loop>
+    <video id="videoBG" poster="{{asset('_cdn/poster.jpg')}}" autoplay muted loop>
         <source src="{{asset('videos/amazonia-expeditions-river1.mp4')}}" type="video/mp4">
     </video>
 
     <header class="header">
-        <a href="" class="logo">
-            <img src="{{asset('images/_cdn/logo.png')}}" alt="Vitor Pesca Esportiva">
+        <a href="{{route('site.index')}}" class="logo">
+            <img src="{{asset('_cdn/logo.png')}}" alt="Vitor Pesca Esportiva">
         </a>
         <input class="menu-btn" type="checkbox" id="menu-btn"/>
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -85,7 +85,7 @@
                     meio ambiente.</p>
             </article>
             <article class="flex-2">
-                <img src="{{asset('images/_cdn/barco-de-frente.jpeg')}}" alt="">
+                <img src="{{asset('_cdn/barco-de-frente.jpeg')}}" alt="">
             </article>
         </div>
 
@@ -96,35 +96,35 @@
 
 
             <div class="flex-8">
-                <a href="{{asset('images/_cdn/cabine-suites.jpeg')}}" data-lightbox="set" data-title="My caption">
-                    <img class="example-image" src="{{asset('images/_cdn/cabine-suites.jpeg')}}" alt=""/>
+                <a href="{{asset('_cdn/cabine-suites.jpeg')}}" data-lightbox="set" data-title="My caption">
+                    <img class="example-image" src="{{asset('_cdn/cabine-suites.jpeg')}}" alt=""/>
                 </a>
             </div>
             <div class="flex-8">
-                <a href="{{asset('images/_cdn/interior-do-banheiro2.jpeg')}}" data-lightbox="set"
+                <a href="{{asset('_cdn/interior-do-banheiro2.jpeg')}}" data-lightbox="set"
                    data-title="My caption">
-                    <img class="example-image" src="{{asset('images/_cdn/interior-do-banheiro2.jpeg')}}" alt=""/>
+                    <img class="example-image" src="{{asset('_cdn/interior-do-banheiro2.jpeg')}}" alt=""/>
                 </a>
             </div>
             <div class="flex-8">
-                <a href="{{asset('images/_cdn/interior-do-banheiro.jpeg')}}" data-lightbox="set"
+                <a href="{{asset('_cdn/interior-do-banheiro.jpeg')}}" data-lightbox="set"
                    data-title="My caption">
-                    <img class="example-image" src="{{asset('images/_cdn/interior-do-banheiro.jpeg')}}" alt=""/>
+                    <img class="example-image" src="{{asset('_cdn/interior-do-banheiro.jpeg')}}" alt=""/>
                 </a>
             </div>
             <div class="flex-8">
                 <a href="{{asset('images/_cdn/roll.jpeg')}}" data-lightbox="set" data-title="My caption">
-                    <img class="example-image" src="{{asset('images/_cdn/roll.jpeg')}}" alt=""/>
+                    <img class="example-image" src="{{asset('_cdn/roll.jpeg')}}" alt=""/>
                 </a>
             </div>
             <div class="flex-8">
                 <a href="{{asset('images/_cdn/roll1.jpeg')}}" data-lightbox="set" data-title="My caption">
-                    <img class="example-image" src="{{asset('images/_cdn/roll1.jpeg')}}" alt=""/>
+                    <img class="example-image" src="{{asset('_cdn/roll1.jpeg')}}" alt=""/>
                 </a>
             </div>
             <div class="flex-8">
                 <a href="{{asset('images/_cdn/roll3.jpeg')}}" data-lightbox="set" data-title="My caption">
-                    <img class="example-image" src="{{asset('images/_cdn/roll3.jpeg')}}" alt=""/>
+                    <img class="example-image" src="{{asset('_cdn/roll3.jpeg')}}" alt=""/>
                 </a>
             </div>
         </div>
@@ -142,7 +142,7 @@
             <article class="flex-2">
                 <div class="speakers mb-60">
                     <div class="avatar">
-                        <img src="{{asset('images/_cdn/barcelos.jpeg')}}" alt="">
+                        <img src="{{asset('_cdn/barcelos.jpeg')}}" alt="">
                     </div>
                     <div class="bio">
                         <h1>Barcelos</h1>
@@ -161,7 +161,7 @@
             <article class="flex-2">
                 <div class="speakers mb-60">
                     <div class="avatar">
-                        <img src="{{asset('images/_cdn/uatuma.jpg')}}" alt="">
+                        <img src="{{asset('_cdn/uatuma.jpg')}}" alt="">
                     </div>
                     <div class="bio">
                         <h1>Uatumã</h1>
