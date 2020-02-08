@@ -22,7 +22,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('vendor/fontawesome/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/reset.css')}}">
-    <link rel="stylesheet" href="{{asset('css/reset.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/breakpoints.css')}}">
     <link rel="stylesheet" href="{{asset('vendor/lightbox/css/lightbox.css')}}">
@@ -113,12 +112,12 @@
                 </a>
             </div>
             <div class="flex-8">
-                <a href="{{asset('images/_cdn/roll.jpeg')}}" data-lightbox="set" data-title="My caption">
+                <a href="{{asset('_cdn/roll.jpeg')}}" data-lightbox="set" data-title="My caption">
                     <img class="example-image" src="{{asset('_cdn/roll.jpeg')}}" alt=""/>
                 </a>
             </div>
             <div class="flex-8">
-                <a href="{{asset('images/_cdn/roll1.jpeg')}}" data-lightbox="set" data-title="My caption">
+                <a href="{{asset('_cdn/roll1.jpeg')}}" data-lightbox="set" data-title="My caption">
                     <img class="example-image" src="{{asset('_cdn/roll1.jpeg')}}" alt=""/>
                 </a>
             </div>
@@ -230,7 +229,7 @@
 
 <footer class="main-container bg-dark ">
     <div class="p-15 t-center ">
-        <small>Copyright &copy2019 - Vitor Pescaria Esportiva. All Rights Reserved.</small>
+        <small>Copyright &copy <?php date('Y')?> - Vitor Pescaria Esportiva. All Rights Reserved.</small>
     </div>
 </footer>
 
