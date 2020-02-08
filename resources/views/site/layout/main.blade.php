@@ -30,6 +30,7 @@
 </head>
 
 <body>
+@include('sweetalert::alert')
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 

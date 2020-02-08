@@ -30,8 +30,10 @@ class ContatoMail extends Mailable
 
     public function build()
     {
-        $this->subject('Contato site');
-        $this->to('contato@vspescaesportiva.com','Visctor Pescaria');
-        return $this->view('emails.contato',compact('contato'));
+
+       return  $this->to('contato@vspescaesportiva.com','Victor Souza')
+                        ->cc($this->contato['email'],$this->contato['nome'])
+                        ->subject('Contato Site Victor Souza Pescaria Esportiva')
+                        ->view('emails.contato',['contato'=>$this->contato]);
     }
 }

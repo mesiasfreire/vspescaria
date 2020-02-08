@@ -70,8 +70,14 @@ class SiteController extends Controller
             'email'=>   $request->email,
             'assunto'=> $request->assunto,
         ];
-
+    try{
         Mail::send(new ContatoMail($contato));
+        toast('Sua pergunta foi encaminhada com successo!','success');
+        return redirect('/')->with('success','Sua pergunta foi encaminhada com successo!');
+    }catch (\Throwable $exp){
+        toast("Houve um problema , para enviar sua dúvida",'error');
+    }
+
     }
 
 }
